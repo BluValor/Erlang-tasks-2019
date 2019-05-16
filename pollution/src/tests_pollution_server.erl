@@ -36,6 +36,8 @@ run_test() ->
   ?assertEqual("Value like this already exists!",
     pollution_server:add_value("station1", {{2019,5,9},{1,8,52}}, "CO2", 11.1)).
 
+%% TODO:
+
 %%remove_value_test() ->
 %%  pollution_server:start(),
 %%  pollution_server:add_station("station1", {1, 2}, P),
@@ -98,4 +100,3 @@ run_test() ->
 %%  ?assertEqual(pollution_server:get_daily_over_limit("CO", {2019,5,9}, 22.2, P5), []),
 %%  ?assertEqual(pollution_server:get_daily_over_limit("CO2", {2019,5,10}, 22.2, P5), []),
 %%  ?assertEqual(pollution_server:get_daily_over_limit("CO2", {2019,5,9}, 10.0, P5), ["station2","station1"]).
-%%
